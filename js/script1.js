@@ -4,6 +4,7 @@ class Produto{
         this.id = 0;
         this.nomeProduto = "";
         this.valor = 0;
+        this.status = true;
 
 
     }
