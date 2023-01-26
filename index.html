@@ -33,35 +33,24 @@
         </div>
 
         <div class="lineInput">
-            <label>Produto</label>
-            <input type="text" id="produto">
+            <label>Preço</label>
+            <input type="text" id="preco">
         </div>
 
         <h1>Controle de Produtos</h1>
-        <button onClick="produto.adicionar()">Adicionar</button>
-        <button onClick="produto.excluir()">Adicionar</button>
+        <button onClick="produto.salvar()">Salvar</button>
+        <button onClick="produto.cancelar()">Cancelar</button>
     </div>
         
     <div class="content">
         <table border="1">
             <thead>
-                <th class="center">ID</th>
-                <th>Produto</th>
-                <th>Valor</th>
-                <th class="center">Ações</th>
+                
             </thead>
 
-            <body>
-                <tr>
-                    <td class="center">1</td>
-                    <td>Mesa da sala de estar</td>
-                    <td>1900</td>
-                    <td class="center">
-                        <img src="img/edit.png">
-                        <img src="img/delete.png">
-                    </td>
-                </tr>
-            </body>
+            <tbody id="tbody">
+                
+            </tbody>
         </table>
     </div>
 </main>
