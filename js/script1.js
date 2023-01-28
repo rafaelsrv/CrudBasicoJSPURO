@@ -8,7 +8,7 @@ class Produto{
     }
     salvar(){
         
-        let produto = this.lerDados()
+        let produto = this.lerDados() //verificação
 
         if(this.validaCampos(produto)){
             this.adicionar(produto);
