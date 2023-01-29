@@ -29,7 +29,7 @@ class Produto{
         produto.nomeProduto = document.getElementById('produto').value
         produto.preco = document.getElementById('preco').value
         
-        return produto;
+        return produto;             //Retornando o produto.
     }
     validaCampos(produto){
         let msg = ''
