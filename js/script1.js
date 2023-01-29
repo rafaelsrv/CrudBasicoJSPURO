@@ -18,6 +18,7 @@ class Produto{
         this.arrayProdutos.push(produto);
         this.id++
         console.log(produto)
+        console.log(produto)
 
     }    
     
