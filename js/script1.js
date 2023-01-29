@@ -25,7 +25,7 @@ class Produto{
     lerDados(){
         let produto = {}
         
-        produto.id = this.id
+        produto.id = this.id        //Setando id de cada objeto.
         produto.nomeProduto = document.getElementById('produto').value
         produto.preco = document.getElementById('preco').value
         
