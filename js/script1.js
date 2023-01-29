@@ -10,8 +10,8 @@ class Produto{
         
         let produto = this.lerDados() //Ler os dados dos inputs usando GetElementByID
 
-        if(this.validaCampos(produto)){
-            this.adicionar(produto);
+        if(this.validaCampos(produto)){     //Validando se existem dados nos inputs.
+            this.adicionar(produto);        //Chamando função que adiciona produtos no array.
         }
     }   
     adicionar(produto){
