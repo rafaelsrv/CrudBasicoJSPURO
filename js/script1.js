@@ -18,14 +18,19 @@ class Produto{
 
     listaTabela(){
         let tbody = document.getElementById('tbody');
+        tbody.innerText = '';
 
         for(let i=0; i<this.arrayProdutos.length; i++){
             let tr = tbody.insertRow();
 
             let td_id = tr.insertCell();
-            let td_preco = tr.insertCell();
+            let td_produto = tr.insertCell();
             let td_valor = tr.insertCell();
             let td_acoes = tr.insertCell();
+
+            td_id.innerText = this.arrayProdutos[i].id;
+            td_produto.innerText = this.arrayProdutos[i].nomeProduto;
+            td_valor.innerText = this.arrayProdutos[i].preco;
         }
     }
     adicionar(produto){
