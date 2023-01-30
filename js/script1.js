@@ -13,7 +13,21 @@ class Produto{
         if(this.validaCampos(produto)){     //Validando se existem dados nos inputs.
             this.adicionar(produto);        //Chamando função que adiciona produtos no array.
         }
+        this.listaTabela();
     }   
+
+    listaTabela(){
+        let tbody = document.getElementById('tbody');
+
+        for(let i=0; i<this.arrayProdutos.length; i++){
+            let tr = tbody.insertRow();
+
+            let td_id = tr.insertCell();
+            let td_preco = tr.insertCell();
+            let td_valor = tr.insertCell();
+            let td_acoes = tr.insertCell();
+        }
+    }
     adicionar(produto){
         this.arrayProdutos.push(produto);
         this.id++
