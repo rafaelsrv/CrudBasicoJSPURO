@@ -64,6 +64,8 @@ class Produto{
         
     }
     adicionar(produto){
+        
+        produto.preco = parseFloat(produto.preco)
         this.arrayProdutos.push(produto);
         this.id++
         
