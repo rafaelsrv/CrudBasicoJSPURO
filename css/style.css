@@ -70,3 +70,6 @@ table td img{
 .center{
     text-align: center;
 }
+.cursor{
+    cursor:pointer;
+}

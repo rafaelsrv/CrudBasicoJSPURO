@@ -40,7 +40,8 @@ class Produto{
             
             let imgDelete = document.createElement('img');
             imgDelete.src = 'img/delete.png';
-            imgDelete.setAttribute("onClick","produto.deletar()") //setAttibute("evento","ação") Quando/Oque.
+            imgDelete.setAttribute("onClick","produto.deletar("+ this.arrayProdutos[i].id+")") //setAttribute("evento","ação") Quando/Oque.
+            imgDelete.classList.add('cursor')
 
             td_acoes.appendChild(imgDelete);
             td_acoes.appendChild(imgEdit);
@@ -84,8 +85,12 @@ class Produto{
         return true
 
     }
-    deletar(){
-        alert('Deletar')
+    deletar(id){
+        for(let i = 0; i <this.arrayProdutos.length; i++){      //Percorrendo o array para verificação
+            if(this.arrayProdutos[i].id == id){
+                this.arrayProdutos.splice(i,1)
+            }
+        }
     }
 
     
