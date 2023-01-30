@@ -45,14 +45,14 @@ class Produto{
 
             td_acoes.appendChild(imgDelete);
             td_acoes.appendChild(imgEdit);
+            
 
-        }
+        }console.log(this.arrayProdutos)
     }
     adicionar(produto){
         this.arrayProdutos.push(produto);
         this.id++
-        console.log(produto)
-        console.log(produto)
+        
 
     }    
     cancelar(){
@@ -86,11 +86,17 @@ class Produto{
 
     }
     deletar(id){
+        let tbody = document.getElementById('tbody');
+        
+
         for(let i = 0; i <this.arrayProdutos.length; i++){      //Percorrendo o array para verificação
             if(this.arrayProdutos[i].id == id){                 //Se o id do array for igual ao id retornado quando clica em deletar
                 this.arrayProdutos.splice(i,1)                  //Dar um splice no array, retirando o elemento
+                tbody.deleteRow(i)
+
             }                                                   //Da prosição i, 1 elemento só.
         }
+        console.log(this.arrayProdutos)
     }
 
     
