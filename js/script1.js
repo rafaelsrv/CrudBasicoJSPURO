@@ -87,9 +87,9 @@ class Produto{
     }
     deletar(id){
         for(let i = 0; i <this.arrayProdutos.length; i++){      //Percorrendo o array para verificação
-            if(this.arrayProdutos[i].id == id){
-                this.arrayProdutos.splice(i,1)
-            }
+            if(this.arrayProdutos[i].id == id){                 //Se o id do array for igual ao id retornado quando clica em deletar
+                this.arrayProdutos.splice(i,1)                  //Dar um splice no array, retirando o elemento
+            }                                                   //Da prosição i, 1 elemento só.
         }
     }
 
