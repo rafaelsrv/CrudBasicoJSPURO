@@ -14,6 +14,7 @@ class Produto{
             this.adicionar(produto);        //Chamando função que adiciona produtos no array.
         }
         this.listaTabela();
+        this.cancelar();
     }   
 
     listaTabela(){
@@ -28,9 +29,21 @@ class Produto{
             let td_valor = tr.insertCell();
             let td_acoes = tr.insertCell();
 
-            td_id.innerText = this.arrayProdutos[i].id;
+            td_id.innerText = this.arrayProdutos[i].id;     //Adicionando texto no id da tabela.
             td_produto.innerText = this.arrayProdutos[i].nomeProduto;
             td_valor.innerText = this.arrayProdutos[i].preco;
+
+            td_id.classList.add('center');  //Adicionando classe no td_id.
+
+            let imgEdit = document.createElement('img'); 
+            imgEdit.src = "img/edit.png";
+            
+            let imgDelete = document.createElement('img');
+            imgDelete.src = 'img/delete.png';
+
+            td_acoes.appendChild(imgDelete);
+            td_acoes.appendChild(imgEdit);
+
         }
     }
     adicionar(produto){
@@ -40,6 +53,10 @@ class Produto{
         console.log(produto)
 
     }    
+    cancelar(){
+        document.getElementById('produto').value = ''
+        document.getElementById('preco').value = ''
+    }
     
     lerDados(){
         let produto = {}
@@ -68,9 +85,7 @@ class Produto{
     }
 
     
-    cancelar(){
-        alert('Vamos deletar um produto')
-    }
+    
 }
 
 var produto = new Produto()
