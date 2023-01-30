@@ -40,6 +40,7 @@ class Produto{
             
             let imgDelete = document.createElement('img');
             imgDelete.src = 'img/delete.png';
+            imgDelete.setAttribute("onClick","produto.deletar()") //setAttibute("evento","ação") Quando/Oque.
 
             td_acoes.appendChild(imgDelete);
             td_acoes.appendChild(imgEdit);
@@ -82,6 +83,9 @@ class Produto{
         }
         return true
 
+    }
+    deletar(){
+        alert('Deletar')
     }
 
     
