@@ -57,7 +57,7 @@ class Produto{
         }console.log(this.arrayProdutos)
     }
     prepararEdicao(dados){
-        this.editID = dados.id
+        this.editID = dados.id                                          //Buscando ID para edição
         document.getElementById('produto').value = dados.nomeProduto;
         document.getElementById('preco').value = dados.preco;
 
