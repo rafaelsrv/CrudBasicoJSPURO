@@ -35,7 +35,7 @@ class Produto{
             let td_acoes = tr.insertCell();
 
             td_id.innerText = this.arrayProdutos[i].id;     //Adicionando texto no id da tabela.
-            td_produto.innerText = this.arrayProdutos[i].nomeProduto;
+            td_produto.innerText = this.arrayProdutos[i].nomeProduto;       //ALterando nomeProduto
             td_valor.innerText = this.arrayProdutos[i].preco;
 
             td_id.classList.add('center');  //Adicionando classe no td_id.
