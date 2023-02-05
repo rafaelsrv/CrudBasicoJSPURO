@@ -54,7 +54,7 @@ class Produto{
             td_acoes.appendChild(imgEdit);
             
 
-        }console.log(this.arrayProdutos)
+        }
     }
     prepararEdicao(dados){
         this.editID = dados.id                                          //Buscando ID para edição
