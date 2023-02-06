@@ -61,7 +61,7 @@ class Produto{
         document.getElementById('produto').value = dados.nomeProduto;
         document.getElementById('preco').value = dados.preco;
 
-        document.getElementById('btn1').innerText = 'Atualizar'
+        document.getElementById('btn1').innerText = 'Atualizar'  // atualizando valores
         
     }
     adicionar(produto){
