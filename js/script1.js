@@ -131,7 +131,7 @@ class Produto{
         }
 
         
-        console.log(this.arrayProdutos)
+        console.log(this.arrayProdutos)//Quitando do projeto
     }
 
     
